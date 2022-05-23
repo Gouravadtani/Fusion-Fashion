@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+  <style>
+
+
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+    }
+
+ 
+
+    #a1 {
+      overflow: hidden;
+      height: 25px;
+      display: block;
+      width: 300px;
+      text-shadow: 1px 2px lightblue;
+      color: #27bcda;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: bolder;
+      line-height: 30px;
+      margin: 0 0 24px;
+      text-align: center;
+      text-transform: uppercase;
+
+
+    }
+
+    #bc {
+      font-family: Arial, Helvetica, sans-serif;
+      color: blue;
+      font-size: 30px;
+      margin-left: 50px;
+      text-shadow: 2px 2px gray;
+      text-decoration: none;
+    }
+
+
+
+    #demo {
+
+      display: flex;
+
+      flex-flow: row;
+      justify-content: space-evenly;
+    }
+
+    #demo2 {
+
+      display: flex;
+      box-sizing: border-box;
+      padding-left: 20%;
+      flex-flow: row;
+
+    }
+
+    input[type=button] {
+      height: 40px;
+      width: 100px;
+      font-weight: bold;
+      box-sizing: border-box;
+      border-radius: 20px;
+      background-color: black;
+      color: white;
+    }
+
+    input[type=button]:hover {
+      height: 40px;
+      width: 100px;
+      font-weight: bold;
+      box-sizing: border-box;
+      border-radius: 20px;
+      background-color: white;
+      color: black;
+    }
+
+    #navbar ul {
+      background-color: rgb(24, 61, 174);
+      padding: 10px;
+      display: flex;
+      font-family: 'Baloo Bhai', Arial, Helvetica, sans-serif;
+      opacity: 0.5 ;
+
+    }
+
+    #navbar ul li {
+      list-style: none;
+      font-size: 1.3rem;
+    }
+
+    #navbar ul li a {
+      color: White;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+
+    #navbar ul li a:hover {
+      color: black;
+      background-color: white;
+    }
+
+    /* Below Header Slider */
+    .slider {
+      overflow: hidden;
+    }
+
+    .slider figure div {
+      float: left;
+      width: 20%;
+    }
+
+    .slider figure img {
+      width: 100%;
+      height: 10%;
+      float: left;
+    }
+
+    .slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0px;
+      left: 0;
+      animation: 20s slidetime;
+    }
+
+    @keyframes slidetime {
+      0% {
+        left: 0%;
+      }
+
+      10% {
+        left: 0%;
+      }
+
+      12% {
+        left: -100%;
+      }
+
+      22% {
+        left: -100%;
+      }
+
+      24% {
+        left: -200%;
+      }
+
+      34% {
+        left: -200%;
+      }
+
+      36% {
+        left: -300%;
+      }
+
+      46% {
+        left: -300%;
+      }
+
+      48% {
+        left: -400%;
+      }
+
+      58% {
+        left: -400%;
+      }
+
+      60% {
+        left: -300%;
+      }
+
+      70% {
+        left: -300%;
+      }
+
+      72% {
+        left: -200%;
+      }
+
+      74% {
+        left: -200%;
+      }
+
+      84% {
+        left: -100%;
+      }
+
+      86% {
+        left: -100%;
+      }
+
+      96% {
+        left: 0%;
+      }
+
+      98% {
+        left: 0%;
+      }
+    }
+    /*Foooter*/
+    footer{
+  
+    background: rgb(66,66,199);
+    opacity: 1;
+    height: auto;
+
+
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+  color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: white;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+
+
+.footer-bottom{
+    background: rgb(0, 0, 0);
+    opacity: 1;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity:1;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+  </style>
+
+</head>
+
+<body>
+ 
+
+  <nav id="navbar">
+    <ul>
+      <li class="item"><a href="test.html" target="_self" style="text-decoration:underline"> Home </a></li>
+      <li class="item"><a href="yoyo.html" target="_self">Cart</a></li>
+      <li class="item"><a href="#client-section">Our Clients</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+            <i class="bi bi-person-circle"></i>
+            <li class="item"><a href="login.html">profie</a></li>
+    </ul>
+  </nav>
+  <div class="slider">
+    <figure>
+      <div class="slider">
+        <a href="slide1.html"><img src="m.jpg" alt="">
+      </div>
+      <div class="slider">
+        <a href="#"><img src="n.jpg" alt="">
+      </div>
+      <div class="slider">
+        <a href="#"><img src="h.jpg" alt="">
+      </div>
+      <div class="slider">
+        <a href="#"><img src="b.jpg" alt="">
+      </div>
+      <div class="slider">
+        <a href="#"><img src="n.jpg" alt="">
+      </div>
+    </figure>
+  </div>
+  
+
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+  <div id="bc">
+    <center>
+      <h1>Our Top Products</h1>
+    </center>
+  </div>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+  <br>
+  <br>
+  <div id="demo"></div>
+  <div id="demo2"></div>
+  <br>
+
+  <footer>
+    <div class="footer-content">
+        <h3>Fusion Fashion</h3>
+        <p><b>If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Fusion Fashion is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, accessories and more..</b></p>
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/"><img src="instagram.png"
+            height="25px; width=25px;"></a></li>
+<li><a href="#"><img src="facebook-icon.png" height="25px; width=25px;"></a></li>
+<li><a href="https://www.twitter.com/"><img src="twitter.png" height="25px; width=25px;"></a>
+</li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy; <a href="#">Fusion Fashion</a>  </p>
+                <div class="footer-menu">
+                  <ul class="f-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                  </ul>
+                </div>
+    </div>
+
+</footer>
+</body>
+
+<script>
+
+  var c = "";
+
+  for (a = 0; a <= 4; a++) {
+    var xhttp = new XMLHttpRequest();
+    url = "http://fakestoreapi.com/products/" + a;
+    xhttp.open("GET", url, true);
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        const ab = JSON.parse(this.responseText);
+        c = "" + ab.id;
+
+        document.getElementById("demo2").innerHTML = ""
+        document.getElementById("demo").innerHTML += "<br>" + "<p>" + "<center>" + "<img width=200px height=200px src=" + ab.image + ">" + "<p id=a1>" + ab.title + "</p>" + "<input id=" + c + " type=button value=Detail onclick=ab(this.id)>"
+
+      }
+    }
+
+    xhttp.send();
+  }
+  function ab(d) {
+    localStorage.setItem("id", d);
+    window.location.href = "test2.html";
+
+  }
+
+
+</script>
+
+
+</html>
